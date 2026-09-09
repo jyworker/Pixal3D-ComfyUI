@@ -9,7 +9,6 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 REQUIREMENTS = ROOT / "requirements.txt"
 
@@ -93,6 +92,7 @@ def run(cmd: list[str], *, dry_run: bool = False) -> int:
 
 
 def pip_install(args: list[str], *, dry_run: bool = False) -> int:
+    print('installing' + str(args))
     return run([sys.executable, "-m", "pip", "install", *args], dry_run=dry_run)
 
 
@@ -307,4 +307,6 @@ def main(argv: list[str] | None = None) -> None:
 
 
 if __name__ == "__main__":
+    print("pixal3d start installing")
     main()
+    print("pixal3d start installing Over")
