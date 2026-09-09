@@ -16,7 +16,7 @@ huggingface_hub>=0.34.0
 hf-transfer>=0.1.9
 hf_xet>=1.1.0
 imageio>=2.0.0
-natten==0.21.5+torch2100cu128
+#natten install on shell
 numpy>=1.21.0
 opencv-python-headless
 pillow>=9.0.0
